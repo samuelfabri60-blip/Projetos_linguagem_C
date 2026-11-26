@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+    float valor, total = 0;
+
+    printf("Insira o preco do produto (0 para finalizar):\n");
+    scanf("%f", &valor);
+
+    while (valor != 0) {
+
+        if (valor > 0) {
+            total += valor;
+        }
+
+        printf("Insira outro preco (0 para finalizar):\n");
+        scanf("%f", &valor);
+    }
+
+    printf("Total acumulado: R$ %.2f\n", total);
+
+    return 0;
+}        
