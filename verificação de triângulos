@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main(){
+    float a, b, c;
+    
+    printf("insira o valor a: ");
+    scanf("%f", &a);
+    
+    printf("insira o valor b: ");
+    scanf("%f", &b);
+    
+    printf("insira o valor c: ");
+    scanf("%f", &c);
+
+    if(a+b>c && b+c>a && c+a>b){
+        printf("SIM");
+    }
+    else{ 
+        printf("NAO");
+    }
+    return 0;
+}
+
