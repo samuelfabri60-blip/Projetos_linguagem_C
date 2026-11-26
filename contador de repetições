@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main()
+{
+    int num, i, j, repeticoes = 0;
+
+    printf("Quantos numeros deseja?\n");
+    scanf("%d", &num);
+
+    int inseridos[num];
+
+    for (i=0; i<num; i++) {
+        printf("Digite seu numero:\n");
+        scanf("%d", &inseridos[i]);
+
+        for (j=0; j<i; j++) {
+
+            if (inseridos[i] == inseridos[j]) {
+                repeticoes++;
+                break;
+            }
+
+        }
+    }
+
+    printf("Numeros digitados: \n");
+
+    for (i=0; i<num; i++) {
+        printf("%d ", inseridos[i]);
+    }
+
+    printf("Quantidade de repeticoes: %d\n", repeticoes);
+
+    return 0;
+}
+
